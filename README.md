@@ -4,7 +4,7 @@ This sample scripts and datasets are described in the paper "Semi-supervised sty
 
 __\<Description\>__<br />
 After changing your directories in set_config.m and downloading getxxfeat.m, you can use this codes.<br />
-This project has four folders:<br />
+This project has three folders:<br />
 1. data<br />
    - 22-class (1-DoF 8-class and 2-DoF 14-class) EMG data from 25 subjects<br />
         - The detail is described in Table 1.<br />
@@ -61,6 +61,7 @@ This project has four folders:<br />
    this folder will store results_over_senators.fig, results_over_senators.jpg, results_confusionmat.jpg, and results_confusionmat.fig.<br />
 
 __\<Environments\>__<br />
+Windows 10<br />
 MATLAB R2020a<br />
  1. Signal Processing Toolbox<br />
  2. Statics and Machine Learning Toolbox<br />
