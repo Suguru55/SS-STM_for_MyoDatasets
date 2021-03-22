@@ -12,7 +12,6 @@ This project has three folders:<br />
    - M means the motion label (e.g., M1 means resting state and M2 means wrist flexion)<br />
    - T means the number of trials<br />
    - After applying preprocessing.m, Raw_F_c_1dof.mat and Raw_F_c_2dof.mat will be added in this folder.<br />
-   - After applying optimize_XXX.m, best_parameters_XXX_Xdof.mat will be added in this folder.<br />
 
 2. code<br />
    this folder has one main m.file named main_script that uses:<br />
@@ -30,23 +29,10 @@ This project has three folders:<br />
             - getsscfeat<br />
             - getwlfeat<br />
             - getarfeat<br />
-    - optimize_lda_series<br />
-    - optimize_local_svm<br />
-        you can make the following m.files from <a href="https://www.csie.ntu.edu.tw/~cjlin/libsvm/#download" target="_blank">here</a><br />
-        - svmtrain (LIBSVM)<br />
-        - svmpredict (LIBSVM)<br />
-    - optimize_svm_series<br />
-        - svmtrain (LIBSVM)<br />
-        - svmpredict (LIBSVM)<br />
-        - supervised_STM<br />
-            - find_target<br />
-            - calculate_A_b<br />
-        - semi-supervised_STM<br />
-            - find_target<br />
-            - calculate_A_b<br />
-            - confidence<br />
     - evaluate_lda_series<br />
     - evaluate_svm_series<br />
+        you can make the m scripts, svmtrain.m and svmpredict.m from <a href="https://www.csie.ntu.edu.tw/~cjlin/libsvm/#download" target="_blank">here</a><br />
+        - svmtrain (LIBSVM)<br />
         - svmpredict (LIBSVM)<br />
         - supervised_STM<br />
             - find_target<br />
@@ -58,7 +44,7 @@ This project has three folders:<br />
     - visualization<br />
         
 3. resuts<br />
-   this folder will store results_over_senators.fig, results_over_senators.jpg, results_confusionmat.jpg, and results_confusionmat.fig.<br />
+   this folder will store results_lda.mat, results_svm.mat, results.fig and results.jpg.<br />
 
 __\<Environments\>__<br />
 Windows 10<br />
