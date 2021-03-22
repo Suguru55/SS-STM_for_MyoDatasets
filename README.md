@@ -3,7 +3,7 @@
 This sample scripts and datasets are described in the paper "Semi-supervised style transfer mapping-based framework for sEMG-based pattern recognition with 1- or 2-DoF forearm motions" submitted to XXXX.<br />
 
 __\<Description\>__<br />
-After changing your directories in set_config.m and downloading getxxfeat.m, you can use this codes.<br />
+After changing information about your directories in set_config.m (lines 4--6) and main_script.m (lines 42 and 44), downloading getxxfeat.m, and installing LIBSVM package, you can use this codes.<br />
 This project has three folders:<br />
 1. data<br />
    - 22-class (1-DoF 8-class and 2-DoF 14-class) EMG data from 25 subjects<br />
