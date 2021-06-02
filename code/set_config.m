@@ -1,6 +1,6 @@
 function struct = set_config(dir)
 
-% dir(change your directory)
+% dir
 struct.data_dir = [dir, '\data'];
 struct.code_dir = [dir, '\code'];
 struct.save_dir = [dir, '\results'];
@@ -19,10 +19,6 @@ struct.sex = [0; 0; 0; 0; 0; 0; 1; 0; 0; 0;...
 struct.dhand = [0; 0; 0; 0; 0; 0; 0; 0; 0; 0;...
                 1; 0; 1; 0; 1; 0; 0; 0; 0; 0;...
                 1; 0; 1; 0; 0]; % Right: 0, Left: 1 (Regardless of the dominant arm, we set myo device on the right forearm)
-            
-struct.thickness = [27.8; 23.9; 26.5; 27.8; 24.9; 23.3; 23.0; 23.9; 25.0; 26.0;...
-                    22.3; 19.8; 25.0; 22.7; 23.2; 24.2; 25.0; 20.9; 26.1; 26.4;...
-                    22.5; 24.1; 22.9; 21.4; 25.0]; % cm
 
 struct.sub_num = 25;
 struct.mov_1dof_num = 8;
@@ -45,11 +41,19 @@ struct.win_size = 50;             % 250ms window
 struct.win_inc = 10;              % 50ms overlap
 struct.win_num = 26;              % the number of features per trial
 struct.feat_dim_num = 11;         % 11 dimensions per 1 chennel
-     
+
+struct.C = 10;
+struct.kernel_para = 10^-3;
+
 % source selection
-struct.nb_senator_candidate = 1:1:struct.sub_num-1;
+struct.nb_senator = 15;
 
 % transfer learning
+struct.tau = 0.5;
+struct.lambda = 0.1;
+
+struct.beta = 0.2;
+struct.gamma = 0;
 struct.cv_num = 4;                % parameter tuning
 struct.nb_init = 15;
 struct.STM_iter_num = 5;
