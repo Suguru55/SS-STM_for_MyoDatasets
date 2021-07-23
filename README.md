@@ -1,6 +1,6 @@
 # SS-STM_for_MyoDatasets
 
-This sample scripts and datasets are described in the paper "Semi-supervised style transfer mapping-based framework for sEMG-based pattern recognition with 1- or 2-DoF forearm motions" accepted by <i>Biomedical Signal Processing and Control</i>.<br />
+This sample scripts and datasets are described in the paper "<a href="https://www.sciencedirect.com/science/article/pii/S1746809421004146" target="_blank">Semi-supervised style transfer mapping-based framework for sEMG-based pattern recognition with 1- or 2-DoF forearm motions</a>" accepted by <i>Biomedical Signal Processing and Control</i>.<br />
 
 __\<Description\>__<br />
 After changing information about your directories in set_config.m (lines 4--6) and main_script.m (lines 42 and 44), downloading getxxfeat.m, and installing LIBSVM package, you can use this codes.<br />
